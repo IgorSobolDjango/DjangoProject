@@ -22,10 +22,10 @@ Main
   {% for el in books %}
   <tr>
       <th scope="row">{{el.id}}</th>
-      <td >{{el.title}}}</td>
-      <td >{{el.author}}}</td>
-      <td >{{el.text|truncatewords:6 }}}</td>
-      <td >{{el.count}}}</td>
+      <td >{{el.title}}</td>
+      <td >{{el.author}}</td>
+      <td >{{el.text|truncatewords:6 }}</td>
+      <td >{{el.count}}</td>
       <td><a type="button" class="btn btn-info btn-sm" href="/book/{{el.id}}/view">
           <img src="https://cdn-icons-png.flaticon.com/512/983/983909.png" width="24" height="29">
       </a>
@@ -39,7 +39,7 @@ Main
   </tr>
   {% endfor %}
   {% else %}
-  <p>Наразі обрані заклади в каталозі</p>
+  <p>Наразі обрані заклади освіти в каталозі</p>
 {% endif %}
 </tbody>
 </table>
